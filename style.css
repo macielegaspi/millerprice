@@ -155,7 +155,7 @@ to stack on top of each other */
 
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 420px) {
   .minirow {
 	height: calc(100%/7);
 	width: 100%;
