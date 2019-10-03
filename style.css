@@ -14,8 +14,8 @@ body {
 }
 
 .img-contain {
-	max-width: 75%;
-	max-height: 75%;
+	max-width: 60%;
+	max-height: 60%;
 	min-width: 50%;
 	min-height: 50%;
 }
@@ -197,8 +197,8 @@ to stack on top of each other */
 	}
 
 	.img-contain {
-		max-width: 85%;
-		max-height: 85%;
+		max-width: 75%;
+		max-height: 75%;
 	}
 	.minrow {
 		display: block;
