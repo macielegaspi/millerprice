@@ -1,0 +1,213 @@
+/* the PARENT's display value tells the children how to arrange themselves */
+/* when the screen is large, we want the PARENT to tell it's CHILDREN
+to be side-by-side */
+body {
+	width: 100%;
+	height: 100%;
+	display: block;
+	margin: 0;
+}
+
+.contain {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.img-contain {
+	max-width: 75%;
+	max-height: 75%;
+	min-width: 50%;
+	min-height: 50%;
+}
+
+.minirow {
+	height: 25%;
+	width: 100%;
+}
+
+.row {
+	height: 50%;
+	width: 100%;
+	display: block;
+}
+
+
+.column1 {
+	height: 100%;
+	width: calc(100%/5);
+	display: flex;
+}
+
+.content-col{
+	height: 100%;
+	width: calc(100%/3);
+	display: flex;
+}
+
+.iconcolumn {
+	height: 100%;
+	width: calc(100%/5);
+}
+
+.middleimg {
+	content: url("images/appleiconsphere.png");
+	display: none;
+	max-width: 90%;
+	max-height: 90%;
+}
+
+.textctrl {
+	display: flex;
+}
+
+.flex {
+	display: flex;
+}
+
+.block {
+	display: block;
+}
+
+.contain {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.center {
+	align-items: center;
+	justify-content: center;
+}
+
+.left {
+	align-items: center;
+	justify-content: left;
+}
+
+.grow { transition: all .2s ease-in-out; }
+
+.grow:hover { transform: scale(1.1); }
+
+.image1 {
+	content: url("images/treeicon.png");
+	max-width: 70%;
+	max-height: 70%;
+ }
+
+.kermit {background-color: #C3DD63;}
+
+.sage {background: #A4AF69;}
+
+.vomit {background: #7FB069;}
+
+.apple {background: #CC444B;}
+
+.slate {background: #DADDD8;}
+
+.yella {background: #EDE580;}
+
+.satisfy {
+font-family: 'Satisfy', cursive;
+}
+
+.pacifico {
+font-family: 'Pacifico', cursive;
+}
+
+.raleway {
+font-family: 'Raleway', sans-serif;
+}
+
+.title-size {
+	font-size: 40px;
+}
+
+.header {
+	font-size: 30px;
+}
+
+.minrow {
+	height: calc(100%/7*6);
+	width: 100%;
+	display: flex;
+}
+
+.half {
+	height: 100%;
+	width: 50%;
+	display: flex;
+}
+
+.title {
+	height: calc(100%/7);
+	width: 100%;
+	display: flex;
+}
+
+.quote-contain {
+	max-width: 70%;
+	max-height: 70%;
+}
+
+/* when the screen gets small, we want the PARENT to tell it's CHILDREN
+to stack on top of each other */
+@media only screen and (max-width: 978px) {
+  .minirow {
+	height: calc(100%/7);
+	width: 100%;
+	}
+	.image1 {
+		content: url("images/appleiconsphere.png");
+		max-width: 70%;
+		max-height: 70%;
+	 }
+	 .textctrl {
+	 	display: none;
+	 }
+}
+
+@media only screen and (max-width: 895px) {
+	 .millercolumn {
+	 	display: none;
+	 }
+
+}
+
+@media only screen and (max-width: 420px) {
+  .minirow {
+	height: calc(100%/7);
+	width: 100%;
+	}
+	.middleimg {
+		content: url("images/appleiconsphere.png");
+		display: flex;
+		max-width: 150%;
+		max-height: 150%;
+	}
+	.iconcolumn {
+		display: none;
+	}
+	.row {
+	 display: block;
+	 height: 200%;
+	}
+	.content-col{
+		width: 100%;
+		height: calc(100%/3);
+		display: flex;
+	}
+
+	.img-contain {
+		max-width: 85%;
+		max-height: 85%;
+	}
+	.minrow {
+		display: block;
+	}
+	.half {
+		height: 50%;
+		width: 100%;
+	}
+	.title {
+		height: calc(100%/9);
+	}
+}

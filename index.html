@@ -1,0 +1,99 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="images/applefavicon.png" rel="icon" type="image/x-icon" />
+		<title>Miller Price</title>
+		<link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway|Satisfy&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<!-- parent of the 5 child DIVs -->
+	<body>
+		<!-- children of the body -->
+		<div class="minirow kermit flex">
+			<div class="iconcolumn flex center">
+				<div class="image1 contain"></div>
+			</div>
+			<div class="millercolumn left flex">
+					<p class="satisfy title-size">Miller Price</p>
+			</div>
+			<div class="column1 center">
+				<div class="textctrl">
+					<p class="satisfy title-size grow" onclick="smoothScroll(document.getElementById('med'))">Meditation</p>
+				</div>
+			</div>
+			<div class="column1 center">
+				<div class="textctrl">
+					<p class="satisfy title-size grow" onclick="smoothScroll(document.getElementById('music'))">Music</p>
+				</div>
+			</div>
+			<div class="column1 center">
+				<div class="textctrl">
+					<p class="satisfy title-size grow" onclick="smoothScroll(document.getElementById('quotes'))">Quotes</p>
+				</div>
+				<div class="middleimg"></div>
+			</div>
+		</div>
+		<div class="row yella" id="med">
+			<div class="title center">
+				<p class="header pacifico">Meditation</p>
+			</div>
+			<div class="minrow">
+				<div class="content-col center">
+						<a href="https://open.spotify.com/show/4bSTeVDsXWKQCRptxuZnVQ?si=QMCYDpcGSa2_QAMHUmc9PA" class="img-contain" target="_blank">
+							<img src="images/meditationminis.jpg" class="img-contain grow">
+						</a>
+				</div>
+				<div class="content-col center">
+					<a href="https://open.spotify.com/show/3CPoJwrn09eF1bHFgeHZ0v?si=G_xlFESJTLqwkETzscWj9w" class="img-contain" target="_blank">
+						<img src="images/dailymed.jpg" class="img-contain grow">
+					</a>
+				</div>
+				<div class="content-col center">
+					<a href="https://open.spotify.com/show/50yOGRLSNwrA5mDO2g5gt8?si=8uRtgNDdS0azU2lOOISHkg" class="img-contain" target="_blank">
+						<img src="images/mindfulmed.jpg" class="img-contain grow">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row apple" id="music">
+			<div class="title center">
+				<p class="header pacifico">Music</p>
+			</div>
+			<div class="minrow">
+				<div class="content-col center">
+					<a href="https://open.spotify.com/user/spotify/playlist/37i9dQZF1DWU0ScTcjJBdj?si=DfxvviWiRcaOxGToul4oDg" class="img-contain" target="_blank">
+						<img src="images/relax.jpg" class="img-contain grow">
+					</a>
+				</div>
+				<div class="content-col center">
+					<a href="https://open.spotify.com/user/spotify/playlist/37i9dQZF1DWT7XSlwvR1ar?si=96Y3ogsPRf-taDrk4HRPKg" class="img-contain" target="_blank">
+						<img src="images/stressfree.jpg" class="img-contain grow">
+					</a>
+				</div>
+				<div class="content-col center">
+					<a href="https://open.spotify.com/user/spotify/playlist/37i9dQZF1DWZqd5JICZI0u?si=Jea5ZGo_T0OvX5PPjYTuxw" class="img-contain" target="_blank">
+						<img src="images/peacefulmed.jpg" class="img-contain grow">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row vomit center" id="quotes">
+			<div class="title center">
+				<p class="header pacifico">Quotes</p>
+			</div>
+			<div class="minrow">
+				<div class="half center">
+					<img src="images/quote1.png" class="quote-contain">
+				</div>
+				<div class="half center">
+					<img src="images/quote2.png" class="quote-contain">
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+
+</html>
