@@ -148,66 +148,62 @@ font-family: 'Raleway', sans-serif;
 	max-height: 70%;
 }
 
-/* when the screen gets small, we want the PARENT to tell it's CHILDREN
-to stack on top of each other */
+/* compresses title div, gets rid of section text/buttons at the top, changes website icon from apple tree to single apple */
 @media only screen and (max-width: 978px) {
-  .minirow {
+ .minirow {
 	height: calc(100%/7);
 	width: 100%;
-	}
-	.image1 {
-		content: url("images/appleiconsphere.png");
-		max-width: 70%;
-		max-height: 70%;
-	 }
-	 .textctrl {
-	 	display: none;
-	 }
+}
+.image1 {
+	content: url("images/appleiconsphere.png");
+	max-width: 70%;
+	max-height: 70%;
+}
+.textctrl {
+	 display: none;
+}
 }
 
+/* makes "miller price" disappear */
 @media only screen and (max-width: 895px) {
-	 .millercolumn {
-	 	display: none;
-	 }
-
+.millercolumn {
+	 display: none;
+}
 }
 
+/* centers website icon, changes layout from horizontal to vertical */
 @media only screen and (max-width: 420px) {
-  .minirow {
-	height: calc(100%/7);
+.middleimg {
+	content: url("images/appleiconsphere.png");
+	display: flex;
+	max-width: 150%;
+	max-height: 150%;
+}
+.iconcolumn {
+	display: none;
+}
+.row {
+ display: block;
+ height: 200%;
+}
+.content-col{
 	width: 100%;
-	}
-	.middleimg {
-		content: url("images/appleiconsphere.png");
-		display: flex;
-		max-width: 150%;
-		max-height: 150%;
-	}
-	.iconcolumn {
-		display: none;
-	}
-	.row {
-	 display: block;
-	 height: 200%;
-	}
-	.content-col{
-		width: 100%;
-		height: calc(100%/3);
-		display: flex;
-	}
+	height: calc(100%/3);
+	display: flex;
+}
 
-	.img-contain {
-		max-width: 75%;
-		max-height: 75%;
-	}
-	.minrow {
-		display: block;
-	}
-	.half {
-		height: 50%;
-		width: 100%;
-	}
-	.title {
-		height: calc(100%/9);
-	}
+.img-contain {
+	max-width: 75%;
+	max-height: 75%;
+}
+.minrow {
+	display: block;
+}
+.half {
+	height: 50%;
+	width: 100%;
+}
+.title {
+	height: calc(100%/9);
+}
 }
